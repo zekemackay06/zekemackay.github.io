@@ -1,3 +1,4 @@
-body {
-  background_color: lightblue;
+.header_photos {
+  display: flex;
+  justify-content: center;
 }
