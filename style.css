@@ -4,3 +4,7 @@ header_photos {
   margin-right: auto;
   width: 50%;
 }
+
+body {
+  background_color: lightblue;
+}
