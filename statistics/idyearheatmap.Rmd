@@ -1,0 +1,24 @@
+---
+title: "manu"
+author: "Zeke Mackay"
+date: "2024-12-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+manu = read_tsv('manu.txt')
+```
+
+
+```{r}
+manu_updated = manu %>% 
+  select(start_year,end_year,count_persons) %>% 
+  pivot_wider(names_from=end_year,values_from=count_persons) %>% 
+  replace(is.na(.),0)
+```
+```{r}
+write_delim(manu_updated,'manu_updated.csv',delim=',')
+```
+
