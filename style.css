@@ -1,6 +1,7 @@
 .header_photos {
   display: flex;
   justify-content: center;
+  max-width: 240px;
 }
 
 h2, h3 {
