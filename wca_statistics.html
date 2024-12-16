@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name='description' content='Various WCA Statistics'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WCA Statistics</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <p>Here you can find a running list of my endeavors in World Cube Association (WCA) statistics. My goal is to backfill as many of my previous statistics as possible.
+      Most of these queries are for the Facebook group <a href=https://www.facebook.com/groups/439995439706174>WCA Statistics</a>.
+      Most data is from either the WCA <a href='https://www.worldcubeassociation.org/export/results'>TSV Results export</a> or <a href='https://statistics.worldcubeassociation.org/database-query'>SQL Developer Export</a>.
+      </p>
+      <hr>
+      <h1>2024-12-16 - Heatmap of WCA ID years and when they last competed</h1>
+      <p>
+        Requested by Manu Singhal <br>
+        This heatmap shows the number of people for which their first competition was in [row] year and their latest competition was in [column] year. Unfortunately the results are uninteresting due to how many people stop competing their first year. Perhaps this is a query I'll come back to in search of a better visualization.
+      </p>
+      <img src='/statistics/20241216.png'>
+      <a href='/statistics/idyearheatmap.sql' download>SQL Query for developer export to generate counts per year</a>
+      <a href='/statistics/idyearheatmap.Rmd' download>Rmd file to format data.</a>
+    </body>
+</html>
